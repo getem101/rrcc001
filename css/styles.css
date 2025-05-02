@@ -1,0 +1,24 @@
+/* Student Name: Harold Alexander
+File Name: Travel.html
+Dete: 05/01/2025
+*/
+
+body,main,head,header,footer{
+    margin: 0;
+    padding:0;
+    
+}
+
+body{
+    background-color:  rgb(94, 86, 86);
+}
+
+.c-item{
+    height: 480px;
+}
+
+.c-img{
+    height: 100%;
+    object-fit: cover;
+    filter: brightness()
+}
