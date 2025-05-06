@@ -3,22 +3,118 @@ File Name: Travel.html
 Dete: 05/01/2025
 */
 
-body,main,head,header,footer{
+body,main,head,header,footer, .carousel{
     margin: 0;
     padding:0;
     
 }
 
-body{
-    background-color:  rgb(94, 86, 86);
+body {
+    background-image: linear-gradient(rgb(43, 103, 121), rgb(227, 247, 232));
 }
 
 .c-item{
-    height: 480px;
+    height: 350px;
 }
 
 .c-img{
     height: 100%;
     object-fit: cover;
     filter: brightness()
+}
+
+/* */
+
+/*  Style navbar font for links*/
+.nav-link {
+    
+        font-family: "Lobster", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 25px;
+        color: black;  
+        border-style: solid;
+}
+
+/* Style for the nav bar font and size*/
+.navbar-brand {
+    
+        font-family: "Lobster", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 50px;
+}
+
+/* Style for card setting */
+
+.btn-primary {
+    
+        border-radius: 4px;
+        background-color: #04427c;
+        border: none;
+        color: #f3f1f1;
+        text-align: center;
+        font-size: 20px;
+        padding: 16px;
+        width: 200px;
+        transition: all 0.5s;
+        cursor: pointer;
+        margin: 36px;
+        box-shadow: 0 10px 20px -8px rgba(0, 0, 0,.7);
+      }
+      
+      button{
+        cursor: pointer;
+        display: inline-block;
+        position: relative;
+        transition: 0.5s;
+      }
+      
+      button:after {
+        content: '»';
+        position: absolute;
+        opacity: 0;  
+        top: 14px;
+        right: -20px;
+        transition: 0.5s;
+      }
+      
+      button:hover{
+        padding-right: 24px;
+        padding-left:8px;
+      }
+      
+      button:hover:after {
+        opacity: 1;
+        right: 10px;
+      }
+
+
+
+
+
+
+.card {
+    min-height: 100px;
+}
+
+.card-img-top {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+
+.cardbox {
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.cardbox2 {
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
 }
