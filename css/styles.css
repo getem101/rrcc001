@@ -9,6 +9,7 @@ body,main,head,header,footer, .carousel{
     margin: 0;
     padding:0;
     
+    
 }
 
 body {
@@ -95,31 +96,51 @@ body {
 
 
 /* Style for card */
-.card-body {
-  padding: 5px;
-
+.row {
+  padding: 20px;
 }
 .card {
-  
-    min-height: 100px;
+ 
+  min-width: auto;
+  min-height: auto;
+   
 }
 
 .card-img-top {
+
     width: 100%;
     height: 250px;
     object-fit: cover;
 }
 
-/* Style for images */
+/* Style for  card images */
 .img-thumbnail {
   float: right;
   width: 200px;
   height: 150px;
-
+  border-radius: 25px 0 25px 0;
 }
 
 .img-thumbnail002  {
   float: left;
   width: 200px;
   height: 150px;
+
+  border-radius: 25px 0 25px 0;
+}
+
+.card-img-top {
+  height: auto;
+  width: auto;
+
+}
+
+/* Style for Rates*/
+
+/* Style for Agent*/
+.img-thumbnail_agent {
+  float: left;
+  width: 250px;
+  height: 250px; 
+  border-radius: 10px;
 }
