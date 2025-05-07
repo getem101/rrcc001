@@ -3,6 +3,8 @@ File Name: Travel.html
 Dete: 05/01/2025
 */
 
+
+/* Style */
 body,main,head,header,footer, .carousel{
     margin: 0;
     padding:0;
@@ -45,7 +47,7 @@ body {
         font-size: 50px;
 }
 
-/* Style for card setting */
+/* Style for card  button */
 
 .btn-primary {
     
@@ -92,9 +94,13 @@ body {
 
 
 
+/* Style for card */
+.card-body {
+  padding: 5px;
 
-
+}
 .card {
+  
     min-height: 100px;
 }
 
@@ -104,17 +110,16 @@ body {
     object-fit: cover;
 }
 
+/* Style for images */
+.img-thumbnail {
+  float: right;
+  width: 200px;
+  height: 150px;
 
-.cardbox {
-    padding: 20px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
 }
 
-.cardbox2 {
-  padding: 20px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
+.img-thumbnail002  {
+  float: left;
+  width: 200px;
+  height: 150px;
 }
