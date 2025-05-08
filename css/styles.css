@@ -51,6 +51,7 @@ body {
 
 .image-car1{
   display: flex;
+    flex-wrap: wrap;
   justify-content: right;
   border-radius: 50%;
   width: 250px;
@@ -59,7 +60,7 @@ body {
 }
 .p_index{
   margin-top: 44px;
-  display: flex;
+    flex-wrap: wrap;
   justify-content: center;
   padding: 20px;
   display: flex;
@@ -68,6 +69,7 @@ body {
 
 .image-car2{
   display: flex;
+    flex-wrap: wrap;
   justify-content: left;
   border-radius: 50%;
   width: 250px;
