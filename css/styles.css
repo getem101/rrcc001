@@ -19,7 +19,6 @@ body {
 /* Style for index page*/
 .p_index{
 
-  margin: 20px;
     font-size: auto;
     color: black;
     font-family: "Bodoni Moda", serif;
@@ -29,13 +28,16 @@ body {
     
     width: 350px;
     height: 250px;
-    float:left;
+    float:auto;
     } 
 
 
 
 
-
+/* Style for carousel*/
+.carousel{
+  padding-bottom: 20px;
+}
 
 
 
@@ -43,51 +45,40 @@ body {
 
 
 .link{
-  position: absolute;
-  
+  display: flex;
+
 }
 
-.image-car1 {
-  position: relative;
+.image-car1{
+  display: flex;
+  justify-content: right;
   border-radius: 50%;
-  padding: 10px;
-  float: center;
   width: 250px;
-  height: 250px
+  height: 250px;
+
 }
-.dis1{
-  position: relative;
-  border-radius: 50%;
-  padding: 10px;
-  float: center;
-  width: 250px;
-  height: 250px
+.p_index{
+  margin-top: 44px;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  display: flex;
+  justify-items: center;
 }
 
 .image-car2{
-  position: relative;
+  display: flex;
+  justify-content: left;
   border-radius: 50%;
-  padding: 10px;
-  float: center;
   width: 250px;
-  height: 250px
+  height: 250px;
 }
-.car2{
-  
-    position:relative;
-    border-radius: 50%;
-    padding: 10px;
-    float: right;
-    width: 250px;
-    height: 250px;
-
+.royal, .disney{
+  display: flex;
+  justify-content: center;
+  font-weight: bold;
+  font-size: larger;
 }
-
-
-
-
-
-
 .c-item{
     height: 430px;
 }
