@@ -12,26 +12,34 @@ body,main,head,header,footer{
     
 }
 
-body {
-    background-image: linear-gradient(rgb(43, 103, 121), rgb(227, 247, 232));
-}
-
 /* Style for index page*/
 .p_index{
+  padding: 15px;
+  display: flex;
 
-    font-size: auto;
+  flex-wrap: wrap;
+  justify-items: center;
+   float:auto;
+
+    font-size: 20px;
     color: black;
     font-family: "Bodoni Moda", serif;
     font-optical-sizing: auto;
     font-weight: lighter;
-    font-style: normal;
+    font-style: italic;
     
     width: 350px;
     height: 250px;
-    float:auto;
-    } 
+    
 
 
+  margin-top: 44px;
+  
+  justify-content: center;
+  
+}
+ 
+    
 
 
 /* Style for carousel*/
@@ -39,37 +47,28 @@ body {
   padding-bottom: 20px;
 }
 
-
-
-
-
-
 .link{
   display: flex;
-  flex-wrap: wrap;
+flex-wrap: wrap;
+justify-content: center;
 }
 
 .image-car1{
+  margin-top: 20px;
   display: flex;
-    flex-wrap: wrap;
+  flex-wrap: wrap;
   justify-content: right;
   border-radius: 50%;
   width: 250px;
   height: 250px;
 
 }
-.p_index{
-  margin-top: 44px;
-    flex-wrap: wrap;
-  justify-content: center;
-  padding: 20px;
-  display: flex;
-  justify-items: center;
-}
+
 
 .image-car2{
+  margin-top: 20px;
   display: flex;
-    flex-wrap: wrap;
+  flex-wrap: wrap;
   justify-content: left;
   border-radius: 50%;
   width: 250px;
@@ -81,17 +80,20 @@ body {
   font-weight: bold;
   font-size: larger;
 }
+
+
+
 .c-item{
-    height: 430px;
+    height: 450px;
+    width: 100%;
 }
 
 .c-img{
     height: 150%;
+    width: 100%;
     object-fit: cover;
     filter: brightness()
 }
-
-/* */
 
 /*  Style navbar font for links*/
 .nav-link {
@@ -115,47 +117,46 @@ body {
 
 /* Style for card  button */
 
-.btn-primary {
-    
-        border-radius: 4px;
-        background-color: #04427c;
-        border: none;
-        color: #f3f1f1;
-        text-align: center;
-        font-size: 20px;
-        padding: 16px;
-        width: 200px;
-        transition: all 0.5s;
-        cursor: pointer;
-        margin: 36px;
-        box-shadow: 0 10px 20px -8px rgba(0, 0, 0,.7);
-      }
+.btn-primary { 
+  border-radius: 4px;
+  background-color: #0d627c;
+  border: none;
+  color: #f3f1f1;
+  text-align: center;
+  font-size: 20px;
+  padding: 16px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 36px;
+  box-shadow: 0 10px 20px -8px rgba(0, 0, 0,.7);
+  }
       
-      button{
-        cursor: pointer;
-        display: inline-block;
-        position: relative;
-        transition: 0.5s;
-      }
+.button {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+  }
       
-      button:after {
-        content: '»';
-        position: absolute;
-        opacity: 0;  
-        top: 14px;
-        right: -20px;
-        transition: 0.5s;
-      }
+button:after {
+  content: '»';
+  position: absolute;
+  opacity: 0;  
+  top: 14px;
+  right: -20px;
+  transition: 0.5s;
+}
       
-      button:hover{
-        padding-right: 24px;
-        padding-left:8px;
-      }
+button:hover {
+  padding-right: 24px;
+  padding-left:8px;
+}
       
-      button:hover:after {
-        opacity: 1;
-        right: 10px;
-      }
+button:hover:after {
+  opacity: 2;
+  right: 10px;
+}
 
 
 
@@ -163,45 +164,39 @@ body {
 /* Style for card */
 
 .card-body{
-background-repeat:no-repeat ;
-background-size: 1000px;
+  background-repeat:no-repeat ;
+  background-size: 1000px;
 }
 .row {
   padding: 20px;
 }
 .card {
- 
+
   min-width: auto;
   min-height: auto;
    
 }
 
 .card-img-top {
-
+   
     width: 100%;
     height: 250px;
     object-fit: cover;
+    background-blend-mode:darken;
 }
 
 .card-title {
+   text-shadow:2px 2px #d7dbd7;;
+  display: flex;
+  justify-content: flex-start;
   font-weight: bold;
-  color: black;
+  color: rgb(19, 19, 19);
 }
+
+
 /* Style for  card images */
-.img-thumbnail {
-  float: right;
-  width: 200px;
-  height: 150px;
-  border-radius: 25px 0 25px 0;
-}
 
-.img-thumbnail002  {
-  float: left;
-  width: 200px;
-  height: 150px;
 
-  border-radius: 25px 0 25px 0;
-}
 
 .card-img-top {
   height: auto;
@@ -210,8 +205,9 @@ background-size: 1000px;
 }
 
 .card-text {
+  text-shadow:2px 2px #d7dbd7;;
 
-font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   color: rgb(5, 5, 5);
   font-weight: bold;
 }
@@ -227,9 +223,19 @@ font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   border-radius: 20px;
 }
 
+.agent-names {
+  display:flex;
+
+}
+.p-agent{
+  margin-top: 15px;
+  display: flex;
+flex-wrap: wrap;
+float: left;
+}
 
 
-/* Agent 1*/
+/* Agent 1,2,3 and 4 page*/
 .float-left{
   
   margin: 25px;
@@ -246,4 +252,120 @@ height: 150px;
   text-align: center;
   padding-top: 50px;
   margin-bottom: 150px;
+}
+
+/*  Style for Travel Insurance*/
+
+.insurance{
+position: absolute;
+padding-top: 10px;
+}
+
+.insu-1,.insu-2 {
+  position:relative;
+}
+
+.img-thumbnail-1{
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+}
+.img-thumbnail-2 {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+}
+
+.table{
+position: relative;
+}
+
+.btn-secondary {
+  position:relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.p-insur-1,.p-insur-2,.p-insur-3{
+  position: relative;
+  float: right;
+  display: flex;
+
+}
+
+
+/* Style for video */
+.video-1{
+  position: relative;
+  display: flex;
+flex-wrap: wrap;
+justify-content:center ;
+}
+
+/* Style for rate */
+.rate-box{
+padding: 10px;
+}
+
+.img-thumbnail002  {
+padding: 0;
+display: flex;
+float: left;
+flex-wrap: wrap;
+  width: 200px;
+  height: 150px;
+  border-radius: 25px 0 25px 0;
+}
+
+.img-thumbnail {
+  padding: 0;
+  display: flex;
+  float: right;
+  flex-wrap: wrap;
+  width: 200px;
+  height: 150px;
+  border-radius: 25px 0 25px 0;
+}
+.p2, .p1{
+  padding:10px;
+  display: flex;
+  justify-content: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* travel images */
+
+.frame{ 
+padding: 5px 10px;
+position:absolute;
+display: flex;
+flex-wrap: wrap;
+float: center;
+justify-content: center;
+}
+
+.m1,.m2,.m3,.m4,.m5,.m6{
+position: relative;
+display: flex; 
+width: auto;
+height: 200px;
+justify-content: center;
+}
+
+/* style for gudio image*/
+
+.can{
+  
+padding: 10px;
+  
+
+
+}
+
+.text1{
+  margin-left: 50px;
+  float: right;
+ flex-wrap: wrap;
+
 }
