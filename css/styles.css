@@ -369,3 +369,10 @@ padding: 10px;
  flex-wrap: wrap;
 
 }
+
+footer{
+ display: flex;
+justify-content: center;
+font-size: 10px; 
+flex-wrap: wrap;
+}
